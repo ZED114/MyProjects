@@ -1,0 +1,94 @@
+.project-card {
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card h4 {
+  color: rgb(13, 147, 192);
+}
+.projectsHeader {
+  margin: 20px;
+}
+.project-card img {
+  object-fit: fill;
+  height: 200px;
+  width: 90%;
+  border-radius: 8px;
+}
+.projects-container {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.description {
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.like-section {
+  display: flex;
+  margin: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.learnMore_button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 5px;
+  color: white;
+}
+
+.learnMore_button:hover {
+  background-color: orange;
+  transition: 0.5s;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+
+.description p {
+  margin: 10px 20px;
+}
+
+/* Grid container desing */
+
+.gridContainer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+@media (max-width: 1015px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 765px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
