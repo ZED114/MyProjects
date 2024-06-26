@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="signUpEng.css">
+</head>
+<body>
+
+<form id="myForm">
+  <label for="firstName">Emri:</label>
+  <input type="text" id="firstName" name="firstName">
+
+  <label for="lastName">Mbiemri:</label>
+  <input type="text" id="lastName" name="lastName">
+
+  <label for="email">Emaili:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="phone">Numri i Celularit:</label>
+  <input type="tel" id="phone" name="phone">
+
+  <label for="age">Mosha:</label>
+  <input type="number" id="age" name="age">
+
+  <button type="button" onclick="validateForm()">Apliko</button>
+  <p class="error" id="errorMessages"></p>
+</form>
+
+<script src="formValidationAl.js"></script>
+
+</body>
+</html>
