@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header design of the background and the entry text */
+.header {
+  width: 100%;
+  height: 500px; /* Set a default height */
+  background-image: url("Assets/background-image.jpg");
+  background-size: cover; /* Ensure the background image covers the entire header */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Add a semi-transparent background to the text for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Home.css */
+.container {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-section {
+  padding: 100px 0;
+}
+.about-section p {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.light-blue {
+  background-color: rgba(173, 216, 230, 0.5);
+}
+
+.light-blue-transparent {
+  background-color: rgba(173, 216, 230, 0.3);
+}
+
+.content {
+  flex: 0 0 50%;
+  padding: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 50px;
+  color: rgb(48, 108, 168);
+}
+.content h3 {
+  margin-top: 0;
+  font-size: 30px;
+}
+.image {
+  flex: 0 0 45%;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px lightgrey;
+  height: 350px;
+}
+
+/*   The design for Cards on the end of the home page */
+
+.card {
+  width: 200px;
+  padding: 90px 30px;
+  margin: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.services-section {
+  padding: 100px 0;
+  text-align: center;
+}
+.services-section h2 {
+  font-size: 35px;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.homePageIcons {
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.homePageIcons:hover {
+  transform: rotate(15deg);
+}
+
+/* Contact Us design */
+.contactUs-section h2 {
+  margin-top: 0;
+  font-size: 50px;
+  color: rgb(48, 108, 168);
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-container {
+  flex: 0.5;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact-info h1 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+}
+.contact-info p {
+  margin: 10px 0;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container h1 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  color: orange;
+}
+.form-container label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: darkorange;
+}
+
+/* FOOTER DESIGN */
+
+/* The responsive design for the home page */
+
+@media (max-width: 1015px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: auto;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .image img {
+    width: 100%;
+  }
+}
